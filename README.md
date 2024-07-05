@@ -60,10 +60,10 @@ The project is built using several technologies and tools to ensure scalability,
    clone each projects
 2. **Build and run the Docker containers**:
    ```sh
-   clone each projects
+   docker-compose up
 3. **Deploy to Kubernetes**:
    ```sh
-   clone each projects
+   kubectl apply -f k8s/
 4. **Access the Services**:
    - Use pgAdmin to manage your PostgreSQL database.
    - Use the exposed APIs to interact with the Company, Job, and Review services.
