@@ -1,0 +1,18 @@
+[submodule "service-registryEUREKA"]
+	path = service-registryEUREKA
+	url = https://github.com/sasiriJ/service-registryEUREKA.git
+[submodule "reviewms"]
+	path = reviewms
+	url = https://github.com/sasiriJ/reviewms.git
+[submodule "jobms"]
+	path = jobms
+	url = https://github.com/sasiriJ/jobms.git
+[submodule "gateway"]
+	path = gateway
+	url = https://github.com/sasiriJ/gateway.git
+[submodule "config-server"]
+	path = config-server
+	url = https://github.com/sasiriJ/config-server.git
+[submodule "companyms"]
+	path = companyms
+	url = https://github.com/sasiriJ/companyms.git
