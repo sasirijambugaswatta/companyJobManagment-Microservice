@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: job
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: job
+  template:
+    metadata:
+      labels:
+        app: job
+    spec:
+      containers:
+      - name: job
+        image: sasirijambugaswaththa/jobms:latest
+        imagePullPolicy: IfNotPresent
+        env:
+          - name: SPRING_PROFILES_ACTIVE
+            value: k8s
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8082
+      restartPolicy: Always

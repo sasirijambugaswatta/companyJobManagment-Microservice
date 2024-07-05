@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rabbirmq
+  labels:
+    app: rabbirmq
+    type: LoadBalancer
+spec:
+  selector:
+    app: rabbirmq
+  type: NodePort
+  ports:
+    - name: amqp
+      port: 9411
+      targetPort: 9411
+      nodePort: 30500
+    - name: managment
+      port: 15672
+      targetPort: 15672
+      nodePort: 30501
+  
